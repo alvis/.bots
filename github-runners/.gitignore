@@ -1,0 +1,22 @@
+# defense in depth only: runtime and authentication must live OUTSIDE Git.
+.env
+.env.*
+*.token
+*.log
+*.pid
+.credentials*
+.runner
+.runner_*
+GH_CONFIG_DIR/
+runner/
+runtime/
+downloads/
+_work/
+_diag/
+# never commit runner distributions or secret key material.
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.pem
+*.key
